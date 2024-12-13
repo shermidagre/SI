@@ -37,10 +37,88 @@
 
 
 ## 5. Disponibilidad
+---
+# Ejemplos de Uso
 
-- **useradd**: Disponible en todas las distribuciones de Linux, como un guerrero omnipresente.
 
-- **adduser**: Puede no estar disponible en todas las distribuciones. En algunas, como Arch Linux, `useradd` es el comando central para la creación de usuarios, como un líder que toma el control.
+## Crear un Usuario Llamado «nuevo_usuario» con `useradd`
+
+```bash
+
+useradd -m -p "contraseña_segura" nuevo_usuario
+```
+- 
+  - m: Crea el directorio de inicio del usuario, como un constructor diligente.
+  - p: Establece la contraseña del usuario, fortaleciendo la seguridad como un ninja sigiloso.
+
+---
+## Crear un Usuario Llamado «nuevo_usuario» con `adduser`
+
+```bash
+
+useradd -m -p "contraseña_segura" nuevo_usuario
+```
+- Explicación
+  - adduser te pedirá una contraseña para el usuario y creará automáticamente el directorio de inicio, como un maestro Jedi que guía al nuevo usuario.
+---
+# ¿Cuándo Usar Cada Comando?
+
+
+## Utiliza `useradd` cuando:
+
+- Necesitas un control granular sobre la configuración de la cuenta del usuario, como un guerrero que afina su espada.
+
+- Creas scripts automatizados para la creación masiva de usuarios, como un ejército de guerreros.
+
+- La distribución de Linux no tiene disponible `adduser`, como un guerrero que se adapta a cualquier terreno.
+
+
+## Utiliza `adduser` cuando:
+
+- Prefieres una interfaz interactiva y amigable para la creación de usuarios, como un maestro Jedi que facilita el aprendizaje.
+
+- Deseas aprovechar la configuración predeterminada para el directorio de inicio y otros parámetros, como un constructor que utiliza planos predefinidos.
+
+- No necesitas especificar opciones de configuración complejas, como un guerrero que busca la simplicidad.
+
+
+## Tabla Comparativa
+
+
+|  Característica                     | `adduser`                                          | `useradd`                                                  | Ejemplo                                                 |
+
+|------------------------------------|-----------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
+
+| Interactividad                     | Interactivo, solicita información detallada.        | No interactivo, requiere opciones manuales.                | `sudo adduser nuevo_usuario`                            |
+
+| Facilidad de uso                   | Diseñado para ser más amigable y sencillo.          | Requiere conocimientos más avanzados.                      | `sudo useradd -m -s /bin/bash nuevo_usuario`            |
+
+| Crea directorio de inicio          | Automáticamente crea el directorio home.            | Requiere la opción `-m` para crearlo.                      | `sudo adduser nuevo_usuario`                            |
+
+| Shell predeterminada               | Utiliza la shell predeterminada del sistema.        | Requiere la especificación con `-s`.                       | `sudo useradd -m -s /bin/bash nuevo_usuario`            |
+
+| Grupos adicionales                 | Ofrece opciones para agregar a grupos adicionales.  | Necesita comandos adicionales para esto.                   | `sudo adduser nuevo_usuario grupo_adicional`            |
+
+| Configuración por defecto          | Configura valores por defecto automáticamente.      | Requiere especificación manual de opciones.                | `sudo useradd -m -s /bin/bash nuevo_usuario`            |
+
+| Bloquea la cuenta                  | Puede bloquear una cuenta recién creada.            | No tiene opción directa para bloquear.                     | `sudo adduser --lock nuevo_usuario`                     |
+
+| Mensaje de bienvenida              | Puede mostrar un mensaje de bienvenida.             | No proporciona directamente esta opción.                   | `sudo adduser --gecos "Bienvenido" nuevo_usuario`       |
+
+| Mensajes de error                  | Ofrece mensajes de error más informativos.          | Las opciones incorrectas pueden ser menos descriptivas.    | `sudo adduser usuario_existente`                        |
+
+| Auditoría de comandos              | Puede registrar la creación del usuario.            | Menos propenso a mantener registros automáticamente.       | No hay una opción directa para la auditoría.            |
+
+| Uso de scripts                     | Apto para ser utilizado en scripts.                 | Menos adecuado para su uso en scripts.                     | Puede ser utilizado con precaución en scripts.          |  
+
+| Comentarios en `/etc/passwd`       | Puede incluir comentarios en `/etc/passwd`.         | No permite comentarios en ese archivo.                     | `sudo adduser --gecos "Usuario de prueba" nuevo_usuario`|
+
+
+Estos ejemplos te brindan una guía práctica sobre cómo utilizar los comandos `adduser` y `useradd` con diferentes opciones. Ten en cuenta que los ejemplos pueden variar según la distribución de Linux que estés utilizando.
+---
+
+---
+
 ---
 ## **Cracion del usuario mediante adduser (manera mas completa)**
 - _
