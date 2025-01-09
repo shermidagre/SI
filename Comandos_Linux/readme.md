@@ -1,23 +1,25 @@
-# Comandos Básicos de Linux
+# Comandos Básicos de Linux 
 
 Este documento proporciona una lista de comandos básicos de Linux que pueden ser útiles para principiantes y usuarios intermedios.
 
-## 1. Gestión de archivos(Comandos de Navegación)
+## 1. Gestión de Archivos (Comandos de Navegación)
 
-1. **`ls`**: Lista el contenido del directorio actual.
-    ```bash
-    ls
-    ```
 
-2. **`cd`**: Cambia el directorio actual.
-    ```bash
-    cd /ruta/al/directorio
-    ```
+- **`ls`**: Lista el contenido del directorio actual sin archivos ocultos.
 
-3. **`pwd`**: Muestra la ruta del directorio actual.
-    ```bash
-    pwd
-    ```
+
+- **`ls -l`**: Lista el contenido del directorio actual con archivos ocultos.
+
+
+- **`cd`**: Cambia el directorio actual.
+
+    - **`cd /etc`**: Ruta absoluta (con `/`).
+
+    - **`cd etc`**: Ruta relativa (sin `/`).
+
+
+- **`pwd`**: Muestra la ruta del directorio actual.
+
 
 ## 2. Comandos de Manipulación de Archivos y Directorios
 
@@ -181,7 +183,7 @@ Este documento proporciona una lista de comandos básicos de Linux que pueden se
 
 31. **`ps`**: Muestra una instantánea de los procesos actuales.
     ```bash
-    ps aux
+    ps -aux
     ```
 
 32. **`kill`**: Envía una señal a un proceso, generalmente para terminarlo.
