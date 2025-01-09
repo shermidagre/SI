@@ -220,3 +220,4 @@ Este documento proporciona una lista de comandos básicos de Linux que pueden se
     ```bash
     passwd nombre_del_usuario
     ```
+    
