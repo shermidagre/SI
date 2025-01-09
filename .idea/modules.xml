@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Comandos_Linux/Comandos_Linux.iml" filepath="$PROJECT_DIR$/Comandos_Linux/Comandos_Linux.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SI.iml" filepath="$PROJECT_DIR$/.idea/SI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tipos de proxy/Tipos de proxy.iml" filepath="$PROJECT_DIR$/Tipos de proxy/Tipos de proxy.iml" />
     </modules>
   </component>
 </project>
