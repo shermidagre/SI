@@ -2,7 +2,7 @@
 
 Este documento proporciona una lista de comandos básicos de Linux que pueden ser útiles para principiantes y usuarios intermedios.
 
-## 1. Comandos de Navegación
+## 1. Gestion de archivos
 
 1. **`ls`**: Lista el contenido del directorio actual.
     ```bash
